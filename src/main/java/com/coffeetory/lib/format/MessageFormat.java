@@ -6,6 +6,7 @@ import org.jetbrains.annotations.NotNull;
 
 import java.text.DecimalFormat;
 
+@SuppressWarnings("unused")
 public class MessageFormat {
 
     public static String m(double d) {

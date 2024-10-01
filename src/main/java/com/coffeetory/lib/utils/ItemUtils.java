@@ -7,6 +7,7 @@ import org.bukkit.persistence.PersistentDataType;
 
 import javax.annotation.Nullable;
 
+@SuppressWarnings("unused")
 public class ItemUtils {
 
     public static @Nullable String getData(NamespacedKey key, ItemStack item) {

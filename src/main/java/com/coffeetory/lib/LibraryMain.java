@@ -2,6 +2,7 @@ package com.coffeetory.lib;
 
 import org.bukkit.plugin.java.JavaPlugin;
 
+@SuppressWarnings("unused")
 public final class LibraryMain extends JavaPlugin {
 
     private static LibraryMain instance;
