@@ -49,12 +49,12 @@ public class ItemBuilder {
         this.amount = amount;
     }
 
-    public ItemBuilder withDisplayName(String name) {
+    public ItemBuilder withDisplayName(@NotNull String name) {
         itemMeta.displayName(Component.text(name));
         return this;
     }
 
-    public ItemBuilder withDisplayName(Component name) {
+    public ItemBuilder withDisplayName(@NotNull Component name) {
         itemMeta.displayName(name);
         return this;
     }
@@ -96,7 +96,7 @@ public class ItemBuilder {
     }
 
     public ItemBuilder withLore(@NotNull String lore) {
-        this.lore.add(Component.text(lore));
+        this.lore.add(lore.isEmpty() ? Component.empty() : Component.text(lore));
         return this;
     }
 
@@ -106,8 +106,8 @@ public class ItemBuilder {
         return this;
     }
 
-    public ItemBuilder withLore(@NotNull Component lore) {
-        this.lore.add(lore);
+    public ItemBuilder withLore(Component lore) {
+        if (lore != null) this.lore.add(lore);
         return this;
     }
 
