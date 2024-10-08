@@ -4,5 +4,4 @@ main: com.coffeetory.lib.LibraryMain
 api-version: '1.21'
 authors: [ CoffeeTory ]
 description: 커피토리의 라이브러리 플러그인
-website:
-  Discord: coffeetory
+website: "Discord: coffeetory"
