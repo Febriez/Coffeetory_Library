@@ -9,7 +9,7 @@ public final class LibraryMain extends JavaPlugin {
 
     public void onEnable() {
         instance = this;
-        getLogger().fine("커피토리 라이브러리 정상 로드.");
+        getLogger().fine("로드 완료.");
     }
 
     public static LibraryMain getInstance() {
